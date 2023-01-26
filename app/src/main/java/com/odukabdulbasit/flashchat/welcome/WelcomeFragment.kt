@@ -9,6 +9,7 @@ import android.view.animation.AnimationUtils
 import androidx.navigation.fragment.findNavController
 import com.odukabdulbasit.flashchat.R
 import com.odukabdulbasit.flashchat.databinding.FragmentWelcomeBinding
+import com.odukabdulbasit.flashchat.typeWrite
 
 
 class WelcomeFragment : Fragment() {
@@ -29,6 +30,10 @@ class WelcomeFragment : Fragment() {
 
         val animationFadeIn = AnimationUtils.loadAnimation(this.requireContext(), R.anim.animator)
         view.splashText.startAnimation(animationFadeIn)
+
+        //view.splashText.typeWrite(viewLifecycleOwner, "Flash Chat", 33L)
+        view.splashText.typeWrite(viewLifecycleOwner, "Flash Chat", 300L)
+
 
 
         view.registerButton.setOnClickListener {
