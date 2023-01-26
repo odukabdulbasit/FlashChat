@@ -2,7 +2,7 @@
 
 ## Wahat is Flash Chat
 
-Flash Chat is awresome chatting app which is created in Android Studio develped with Kotlin. You can register or if you have an account already you can login and start chatting. 
+Flash Chat is awesome chatting app which is created in Android Studio developed with Kotlin. You can register or if you have an account already you can login and start chatting. 
 
 
 
