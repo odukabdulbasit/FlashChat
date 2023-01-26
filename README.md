@@ -15,6 +15,10 @@ Flash Chat is awresome chatting app which is created in Android Studio develped 
 - Firebase Firestore
 - Animations
 - View Binding
+- Recycler View
+- View Holder
+- Recycler View Adapter
+- Diynamic View Holder
 
 
 
