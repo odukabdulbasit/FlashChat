@@ -18,7 +18,7 @@ Flash Chat is awresome chatting app which is created in Android Studio develped 
 - Recycler View
 - View Holder
 - Recycler View Adapter
-- Diynamic View Holder
+- Dynamic View Holder
 
 
 
