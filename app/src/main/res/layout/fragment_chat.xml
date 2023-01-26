@@ -8,10 +8,59 @@
 
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/messagesRecyclerView"
         android:layout_width="409dp"
-        android:layout_height="729dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/chat_item_my_message"
+        app:reverseLayout="true"
+        app:layout_constraintBottom_toTopOf="@+id/sperator"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/sperator"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/primaryColor"
+        app:layout_constraintBottom_toTopOf="@+id/messageTextEditText"/>
+
+    <EditText
+        android:id="@+id/messageTextEditText"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:hint="Type your message here..."
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/sendButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@+id/messagesRecyclerView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/sendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Send"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:textColor="@color/primaryColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/messageTextEditText"
+        app:layout_constraintTop_toTopOf="@+id/messageTextEditText"
+        app:layout_constraintBottom_toBottomOf="@id/messageTextEditText"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

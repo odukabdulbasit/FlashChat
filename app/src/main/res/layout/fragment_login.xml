@@ -22,7 +22,7 @@
                 android:ems="10"
                 android:inputType="textPersonName"
                 android:src="@drawable/logo"
-                app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/emailEditText"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
@@ -30,7 +30,7 @@
                 app:layout_constraintVertical_chainStyle="packed" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/emailEditText"
                 style="@style/InputField"
                 android:layout_width="0dp"
                 android:layout_height="55dp"
@@ -40,7 +40,7 @@
                 android:ems="10"
                 android:hint="Enter your email"
                 android:inputType="textPersonName"
-                app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+                app:layout_constraintBottom_toTopOf="@+id/passwordEditText"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
@@ -48,7 +48,7 @@
                 app:layout_constraintVertical_chainStyle="packed" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName2"
+                android:id="@+id/passwordEditText"
                 style="@style/InputField"
                 android:layout_width="0dp"
                 android:layout_height="55dp"
@@ -56,25 +56,36 @@
                 android:ems="10"
                 android:hint="Enter your password"
                 android:inputType="textPassword"
-                app:layout_constraintBottom_toTopOf="@+id/button"
-                app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/signInButton"
+                app:layout_constraintEnd_toEndOf="@+id/emailEditText"
                 app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+                app:layout_constraintStart_toStartOf="@+id/emailEditText"
+                app:layout_constraintTop_toBottomOf="@+id/emailEditText"
                 app:layout_constraintVertical_chainStyle="packed" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/signInButton"
                 style="@style/RegisterButton"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
                 android:text="Login"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/editTextTextPersonName2"
+                app:layout_constraintEnd_toEndOf="@+id/passwordEditText"
                 app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+                app:layout_constraintStart_toStartOf="@+id/passwordEditText"
+                app:layout_constraintTop_toBottomOf="@+id/passwordEditText" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
